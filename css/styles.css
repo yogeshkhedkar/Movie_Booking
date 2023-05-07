@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Joan', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #FDF4F5;
+    border-radius: .8rem;
+    color: #1e1f26;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FEFF86;
+}
+
+.btn-l {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: #efefef;
+    display: grid;
+    grid-template-columns: 1000px;
+    justify-content: space-evenly;
+}
+
+
+/* top bar */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    margin-left: -200px;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+.left-content,
+.right-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    margin-right: 3rem;
+    color: #cd8c38;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    margin-right: 1rem;
+}
+
+.navigation li a:hover {
+    color: #cd8c38;
+}
+
+.active {
+    color: #cd8c38;
+}
+
+
+.profile-img-box {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* main container */
+
+.main-container {
+    color: #adadad;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+}
+
+
+
+/* movies container */
+
+.upcoming-img-box {
+    position: relative;
+    height: 430px;
+    width: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.upcoming-title {
+    position: absolute;
+    top: .8rem;
+    left: 1.5rem;
+    color: rgb(255, 59, 59);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.btn-alt {
+    background-color: #1e1f26;
+    color: #F5EBEB;
+    border: 1px solid #c20101;
+    margin-left: 1rem;
+}
+
+.btn-alt:hover {
+    color: #000000;
+    background-color: #FEFF86;
+}
+
+
+/* current movies */
+
+.movies-container {
+    padding-bottom: 1rem;
+}
+
+.current-movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.current-movie {
+    background-color: #E3F2C1;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.cm-img-box {
+    position: relative;
+    height: 220px;
+    width: auto;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.movie-title {
+    color: #393646;
+    margin-bottom: .2rem;
+}
+
+.booking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.price {
+    color: #1f9c0fd5;
+}
+
+/* sidebar */
+
+.sidebar {
+    background: #C9DBB2;
+    backdrop-filter: blur(5px);
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+}
+
+.sidebar-groups {
+    margin-bottom: 1rem;
+}
+
+.sg-title {
+    margin-bottom: .5rem;
+    color: #000000;
+}
+
+.sub-title{
+    color: #393646;
+}
+
+input {
+    margin-bottom: .6rem;
+}
+
+input[type=checkbox]:checked {
+    accent-color: #cd8c38;
+}
+
+input[type=radio]:checked {
+    accent-color: #cd8c38;
+}
+
+label {
+    margin-left: .5rem;
+}
+
+/* Sign UP */  
+
+.index-img{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 10%;
+} 
+
+.sign-up{
+    margin: auto;
+    width: 60%;
+    border-radius: .5rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+}
+
+.form-box{
+    background-color: #F6FFDE;
+    border: 1px solid #A8DADC;
+    box-shadow: 0 0 10px #FEFF86;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sign IN */
+
+.sign-in-btn{
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #F6FFDE;
+    border-radius: .8rem;
+    color: #1e1f26;
+    transition: .3s;
+}
+
+/* Booking Page */
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#seats {
+	background-color: #ffffff;
+	padding: 30px;
+    
+	margin:  auto;
+    text-align: center;
+	width: 60%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.screen{
+    text-align: center;
+    margin: auto;
+    color: #9ccef0;
+    width: 55%;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+label {
+	display: block;
+	position: relative;
+    margin-left: 20px;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	position: absolute;
+    width: 20px;
+	height: 20px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+	background-color: #007bff;
+}
+
+input[type="checkbox"]:disabled{
+	background-color: #ddd;
+	cursor:not-allowed;
+}
+
